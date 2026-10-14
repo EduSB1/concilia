@@ -1,0 +1,17 @@
+# Segredos — NUNCA versionar
+.env
+*.pem
+*.key
+*.crt
+
+# Saídas geradas
+saida/
+__pycache__/
+.venv/
+
+# Extratos e relatórios reais contêm dados financeiros e pessoais (LGPD).
+# Por isso todo CSV é ignorado por padrão; só o exemplo e os dados de teste
+# (ambos fictícios) entram no repositório.
+*.csv
+!exemplo_relatorio_liberacoes.csv
+!tests/dados/*.csv
