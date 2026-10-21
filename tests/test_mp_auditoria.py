@@ -5,8 +5,8 @@ dependência nenhuma:
 
     python3 -m unittest discover -s tests -v
 
-Os CSVs de tests/dados/ são derivados do exemplo da raiz, cada um com um
-problema plantado de propósito.
+Os CSVs de tests/dados/ são derivados do exemplo de prototipo/, cada um com
+um problema plantado de propósito.
 """
 
 import sys
@@ -14,12 +14,12 @@ import unittest
 from decimal import Decimal
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "prototipo"))
 
 import mp_auditoria as mp
 
 DADOS = Path(__file__).resolve().parent / "dados"
-EXEMPLO = Path(__file__).resolve().parent.parent / "exemplo_relatorio_liberacoes.csv"
+EXEMPLO = Path(__file__).resolve().parent.parent / "prototipo" / "exemplo_relatorio_liberacoes.csv"
 
 # Valores de referência do exemplo, conferidos à mão.
 CREDITOS = Decimal("9350.00")

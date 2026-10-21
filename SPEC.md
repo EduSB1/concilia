@@ -1,7 +1,13 @@
 # SPEC — Conciliação Bancária para Vendedores de Marketplace
 
 > Nome provisório: **Concilia** · Versão da spec: 0.1 · 14/10/2026
-> Status: Fase 0 (protótipo) · Documento vivo: atualizar a cada decisão.
+> Status: Fase 1 (MVP interno) em andamento · Documento vivo: atualizar a cada decisão.
+>
+> Pronto: motor de conciliação (`app/motor/`), formato normalizado
+> (`app/normalizacao/`) e esquema do banco (`migrations/001_inicial.sql`).
+> Pendente: conectores de API, persistência e tela de pendências.
+> A Fase 0 segue aberta: o critério dela é explicar os R$ 3 mil do piloto,
+> e isso depende do relatório real.
 
 ---
 
