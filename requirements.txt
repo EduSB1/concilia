@@ -1,0 +1,6 @@
+requests>=2.31
+SQLAlchemy>=2.0
+alembic>=1.13
+
+# Driver PostgreSQL — necessário apenas fora do SQLite local.
+psycopg2-binary>=2.9

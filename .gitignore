@@ -1,0 +1,32 @@
+# Credenciais e material criptográfico — nunca versionar
+.env
+*.pem
+*.key
+*.crt
+
+# Ambientes virtuais e artefatos de build
+.venv/
+.venv_test/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+
+# Saídas geradas em execução
+saida/
+
+# Extratos e relatórios reais contêm dados financeiros e pessoais (LGPD).
+# Todo CSV é ignorado por padrão; apenas o exemplo e os dados de teste,
+# ambos fictícios, entram no repositório.
+*.csv
+!prototipo/exemplo_relatorio_liberacoes.csv
+!tests/dados/*.csv
+
+# Ferramentas locais de desenvolvimento
+.claude/
+.switchboard/
+.markdown-collab/
+.DS_Store
+
+# Páginas exportadas para revisão manual, fora do escopo do projeto
+/index.html
